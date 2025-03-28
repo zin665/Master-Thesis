@@ -33,11 +33,15 @@ pip install -r requirements.txt
 Use Google Colab  t first load the  Dataset the  click on Run All
 
 ## 📊 Model Performance
-| Model | Accuracy | Precision | Recall | F1-Score |
-|--------|------------|------------|------------|------------|
-| Random Forest | 83.2% | 0.82 | 0.80 | 0.81 |
-| XGBoost | 85.4% | 0.84 | 0.82 | 0.83 |
-| Logistic Regression | 76.5% | 0.77 | 0.75 | 0.76 |
++---------------------------+----------+------------------------+---------------------+-----------------------+
+| Model                     | Accuracy | Precision (Macro Avg) | Recall (Macro Avg) | F1-Score (Macro Avg)  |
++---------------------------+----------+------------------------+---------------------+-----------------------+
+| Random Forest             | 0.6119   | 0.66                   | 0.60                | 0.61                  |
+| XGBoost                   | 0.6243   | 0.67                   | 0.56                | 0.62                  |
+| Optimized XGBoost         | 0.6291   | 0.68                   | 0.63                | 0.63                  |
+| Ensemble Voting Classifier| 0.6274   | 0.68                   | 0.56                | 0.62                  |
+| Logistic Regression       | 0.5875   | 0.59                   | 0.58                | 0.59                  |
++---------------------------+----------+------------------------+---------------------+-----------------------+
 
 ## 📌 Future Enhancements
 - ✅ **Optimize DQN hyperparameters** for better segmentation
